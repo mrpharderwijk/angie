@@ -6,14 +6,11 @@
 
   gulp.task('build', function(callback) {
     runSequence('clean', [
-      'libs',
-      'scripts',
-      'copy',
-      'sass',
+      'inject',
       'images',
       'fonts',
-      'inject',
+      'copy',
       'serve'
-    ], callback);
+    ], 'inject', callback);
   });
 })();

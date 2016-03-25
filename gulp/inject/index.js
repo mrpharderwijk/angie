@@ -7,8 +7,8 @@
   gulp.task('inject', ['inject-css', 'inject-js']);
 
   // CSS inject
-  gulp.task('inject-css', function () {
-    return gulp.src(config.paths.src.root + '/index.html')
+  gulp.task('inject-css', ['sass'], function () {
+    return gulp.src(config.paths.dest.root + '/index.html')
       .pipe(inject(
         gulp.src([
           config.paths.dest.css + '/**/*.*'
@@ -25,8 +25,8 @@
   });
 
   // JavaScript inject
-  gulp.task('inject-js', ['scripts'], function () {
-    return gulp.src(config.paths.src.root + '/index.html')
+  gulp.task('inject-js', ['libs', 'scripts'], function () {
+    return gulp.src(config.paths.dest.root + '/index.html')
       .pipe(inject(
         gulp.src([
           config.paths.dest.libs + '/angular.js',
@@ -42,7 +42,7 @@
           config.paths.dest.app + '/**/*.js'
         ]),
         {
-          starttag: '<!-- inject:css -->',
+          starttag: '<!-- inject:js -->',
           addPrefix: false,
           addRootSlash: false,
           ignorePath: 'public',
