@@ -1,11 +1,14 @@
 # A.N.G.I.E.
+
 **Angular 'N' Gulp Initialisation Entity** - This project is to quickly setup and yield an AngularJS project that uses Gulp for build automation.
 
 ## Table of Contents
 
 1. [Installation](#installation)
 2. [Build Automation With Gulp](#build-automation-with-gulp)
+
   2.1 [Available Build Options](#available-build-options)
+  
   2.2 [Available Build Tasks](#available-build-tasks)
 
 ## 1. Installation
