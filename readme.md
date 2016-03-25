@@ -6,9 +6,9 @@
 
 1. [Installation](#installation)
 2. [Build Automation With Gulp](#build-automation-with-gulp)
-
+  <br />
   2.1 [Available Build Options](#available-build-options)
-  
+  <br />
   2.2 [Available Build Tasks](#available-build-tasks)
 
 ## 1. Installation
