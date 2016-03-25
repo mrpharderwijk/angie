@@ -6,6 +6,7 @@
   global.connect = require('gulp-connect');
   global.gulp = require('gulp');
   global.gutil = require('gulp-util');
+  global.browserSync = require('browser-sync');
 
   // Require the directory where all gulp tasks are defined
   require('./gulp');

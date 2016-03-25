@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  /*globals gulp, config*/
+  /*globals gulp, config, browserSync*/
 
   var watch = require('gulp-watch');
 
@@ -9,7 +9,6 @@
    *  watched folders/files are defined
    **/
   gulp.task('watch', function() {
-
     // Sass Watcher
     watch(config.paths.src.css + '/**/*.scss', 
       {
@@ -53,5 +52,11 @@
         gulp.start('inject');
       }
     );
+
+    // BrowserSync Reload
+    watch(config.paths.dest.root + '/**/*.*')
+      .on('change', function() {
+        browserSync.reload();
+      });
   });
 })();

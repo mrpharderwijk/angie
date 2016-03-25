@@ -9,6 +9,7 @@
   "author": "Marnix Harderwijk <m.harderwijk@littlebigagency.com>",
   "license": "ISC",
   "dependencies": {
+    "browser-sync": "^2.11.2",
     "connect-modrewrite": "^0.9.0",
     "del": "^2.2.0",
     "event-stream": "^3.3.2",
