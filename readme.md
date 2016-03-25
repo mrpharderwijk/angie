@@ -122,3 +122,4 @@ TODO:
 + Istanbul
 + Third-party modules (angular-ui, resource, sanatize, translate, bootstrap-sass, angular-animate and more)
 + Setting up backend?
++ scss linting
