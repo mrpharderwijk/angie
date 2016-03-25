@@ -40,6 +40,7 @@
 This project uses Gulp to build its project files into a generated folder. I don't want to start the whole Grunt vs Gulp discussion so lets just continue with the details for this build script...
 
 ### 2.1 Available Build Options
+-------------------------------
 
 + **LiveReload**
   
@@ -60,6 +61,7 @@ This project uses Gulp to build its project files into a generated folder. I don
   `$ gulp --port=9000` - will set the port to 9000
 
 ### 2.2 Available Build Tasks
+-------------------------------
 
 + **Build**
   
