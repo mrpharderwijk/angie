@@ -115,3 +115,10 @@ The AngularJS application is already set up as I prefer it. Continuing on this r
 ### 3.1 Filestructure
 ---------------------
 
+TODO:
++ Angular Styleguide
++ Karma
++ Protractor
++ Istanbul
++ Third-party modules (angular-ui, resource, sanatize, translate, bootstrap-sass, angular-animate and more)
++ Setting up backend?
