@@ -10,6 +10,7 @@
   2.1 [Available Build Options](#21-available-build-options)
   <br />
   2.2 [Available Build Tasks](#22-available-build-tasks)
+3. [AngularJS Application](#3-angularjs-application)
 
 ## 1. Installation
 
@@ -106,3 +107,11 @@ This project uses Gulp to build its project files into a generated folder. I don
 + **Watch**
   
   TBD; the main watch task watches all directories for changes.
+
+## 3. AngularJS Application
+
+The AngularJS application is already set up as I prefer it. Continuing on this road I've also added the styleguide that you need to comply to in order to keep the build script and your application stable and neat.
+
+### 3.1 Filestructure
+---------------------
+
