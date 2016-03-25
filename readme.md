@@ -1,15 +1,14 @@
-#A.N.G.I.E.
+# A.N.G.I.E.
 **Angular 'N' Gulp Initialisation Entity** - This project is to quickly setup and yield an AngularJS project that uses Gulp for build automation.
 
 ## Table of Contents
---------------------
+
 1. [Installation](#installation)
 2. [Build Automation With Gulp](#build-automation-with-gulp)
   2.1 [Available Build Options](#available-build-options)
   2.2 [Available Build Tasks](#available-build-tasks)
 
 ## 1. Installation
------------------
 
 1. Fork this project
 2. Clone your forked project on your local environment
@@ -34,12 +33,10 @@
   `$ gulp`
 
 ## 2. Build Automation With Gulp
--------------------------------
 
 This project uses Gulp to build its project files into a generated folder. I don't want to start the whole Grunt vs Gulp discussion so lets just continue with the details for this build script...
 
 ### 2.1 Available Build Options
-------------------------------
 
 + **LiveReload**
   
@@ -60,7 +57,6 @@ This project uses Gulp to build its project files into a generated folder. I don
   `$ gulp --port=9000` - will set the port to 9000
 
 ### 2.2 Available Build Tasks
-----------------------------
 
 + **Build**
   
