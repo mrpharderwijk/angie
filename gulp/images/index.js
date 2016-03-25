@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  /*globals gulp, config, connect*/
+  /*globals gulp, config*/
 
   var changed = require('gulp-changed');
   var imagemin = require('gulp-imagemin');
@@ -9,7 +9,6 @@
     return gulp.src(config.paths.src.img + '/*')
       .pipe(changed(config.paths.dest.img))
       .pipe(imagemin())
-      .pipe(gulp.dest(config.paths.dest.img))
-      .pipe(connect.reload());
+      .pipe(gulp.dest(config.paths.dest.img));
   });
 })();

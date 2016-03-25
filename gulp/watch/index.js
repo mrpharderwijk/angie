@@ -54,9 +54,11 @@
     );
 
     // BrowserSync Reload
-    watch(config.paths.dest.root + '/**/*.*')
-      .on('change', function() {
-        browserSync.reload();
-      });
+    if(config.server.livereload) {
+      watch(config.paths.dest.root + '/**/*.*')
+        .on('change', function() {
+          browserSync.reload();
+        });  
+    }
   });
 })();

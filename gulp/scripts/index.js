@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  /*globals gulp, config, gutil, connect*/
+  /*globals gulp, config, gutil*/
 
   var changed = require('gulp-changed');
   var concat = require('gulp-concat');
@@ -60,7 +60,6 @@
       )
     )
     .pipe(process.env.NODE_ENV === 'production' ? productionChannel() : developmentChannel())
-    .pipe(gulp.dest(config.paths.dest.app))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(config.paths.dest.app));
   });
 })();

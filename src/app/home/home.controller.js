@@ -6,6 +6,10 @@
     .controller('HomeCtrl', HomeCtrl);
 
   function HomeCtrl() {
-    console.log('bla');
+    var home = this;
+
+    home.header = 'Home Header';
+    home.content = 'Home Content';
+    home.footer = 'Home Footer';
   }
 })();

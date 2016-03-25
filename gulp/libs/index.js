@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  /*globals gulp, config, gutil, connect*/
+  /*globals gulp, config, gutil*/
 
   var mainBowerFiles = require('main-bower-files');
   var sourcemaps = require('gulp-sourcemaps');
@@ -33,8 +33,7 @@
     .pipe(process.env.NODE_ENV === 'production' ? concat(config.production.libsJs) : gutil.noop())
     .pipe(process.env.NODE_ENV === 'production' ? uglify() : gutil.noop())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.paths.dest.libs))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(config.paths.dest.libs));
   });
 
   /**

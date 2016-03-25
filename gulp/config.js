@@ -6,7 +6,7 @@
   process.env.DEBUG = gutil.env.debug ? true : '';
   process.env.NODE_ENV = gutil.env.prod || gutil.env.PROD ? 'production' : 'development';
   process.env.PORT = gutil.env.port ? gutil.env.port : 3000;
-  process.env.RELOAD = gutil.env.reload ? true : false;
+  process.env.RELOAD = gutil.env.reload ? true : '';
 
   module.exports = {
     debug: Boolean(process.env.DEBUG),

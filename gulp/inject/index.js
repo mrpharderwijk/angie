@@ -1,25 +1,27 @@
 (function() {
   'use strict';
-  /*globals gulp, config, connect*/
+  /*globals gulp, config*/
 
   var inject = require('gulp-inject');
 
-  gulp.task('inject', ['inject-js', 'inject-css']);
+  gulp.task('inject', ['inject-css', 'inject-js']);
 
   // CSS inject
-  gulp.task('inject-css', ['sass'], function () {
+  gulp.task('inject-css', function () {
     return gulp.src(config.paths.src.root + '/index.html')
       .pipe(inject(
-        gulp.src(config.paths.dest.css + '/*.css'),
+        gulp.src([
+          config.paths.dest.css + '/**/*.*'
+        ]),
         {
           starttag: '<!-- inject:css -->',
           addPrefix: false,
           addRootSlash: false,
+          ignorePath: 'public',
           read: false
         }
       ))
-      .pipe(gulp.dest(config.paths.dest.root))
-      .pipe(connect.reload());
+      .pipe(gulp.dest(config.paths.dest.root));
   });
 
   // JavaScript inject
@@ -40,14 +42,13 @@
           config.paths.dest.app + '/**/*.js'
         ]),
         {
-          starttag: '<!-- inject:js -->',
+          starttag: '<!-- inject:css -->',
           addPrefix: false,
           addRootSlash: false,
           ignorePath: 'public',
           read: false
         }
       ))
-      .pipe(gulp.dest(config.paths.dest.root))
-      .pipe(connect.reload());
+      .pipe(gulp.dest(config.paths.dest.root));
   });
 })();

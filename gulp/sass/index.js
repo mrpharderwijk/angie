@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  /*globals gulp, config, gutil, connect*/
+  /*globals gulp, config, gutil*/
   
   var autoprefixer = require('gulp-autoprefixer');
   var bless = require('gulp-bless');
@@ -15,7 +15,6 @@
       .pipe(autoprefixer())
       .pipe(bless())
       .pipe(process.env.NODE_ENV === 'production' ? uglifycss() : gutil.noop())
-      .pipe(gulp.dest(config.paths.dest.css))
-      .pipe(connect.reload());
+      .pipe(gulp.dest(config.paths.dest.css));
   });
 })();
