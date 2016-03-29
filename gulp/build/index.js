@@ -10,8 +10,7 @@
       'inject', // runs sass, libs & scripts
       'images',
       'fonts',
-      'copy',
-      'serve'
-    ], 'inject', callback);
+      'copy'
+    ], 'serve', callback);
   });
 })();
