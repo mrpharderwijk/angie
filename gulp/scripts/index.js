@@ -32,11 +32,7 @@
         config.paths.src.app + '/*.modules.js',
         config.paths.src.app + '/*.config.js',
         config.paths.src.app + '/*.constants.js',
-        config.paths.src.app + '/**/!(*-)*.js',
-        config.paths.src.app + '/**/!(*-*-)*.js',
-        config.paths.src.app + '/**/!(*-*-*-)*.js',
-        config.paths.src.app + '/**/*.*.js',
-        config.paths.src.app + '/**/**/*.js'
+        config.paths.src.app + '/**/!(**.spec).js' // ignore all specs
       ], {
         debug: false
       }

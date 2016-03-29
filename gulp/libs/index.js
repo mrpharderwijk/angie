@@ -6,10 +6,9 @@
   var sourcemaps = require('gulp-sourcemaps');
   var concat = require('gulp-concat');
   var uglify = require('gulp-uglify');
-  // var uglifycss = require('gulp-uglifycss');
 
   // Define bower task and call vendor tasks
-  gulp.task('libs', ['vendorJS', 'vendorCSS']);
+  gulp.task('libs', ['vendorJS', 'vendorSass']);
 
   /**
    *  This task gets all bower javascript files and
@@ -34,13 +33,5 @@
     .pipe(process.env.NODE_ENV === 'production' ? uglify() : gutil.noop())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(config.paths.dest.libs));
-  });
-
-  /**
-   *  This task gets all bower css files and
-   *  puts them in the assets/libs directory
-   **/
-  gulp.task('vendorCSS', function() {
-    return true;
   });
 })();

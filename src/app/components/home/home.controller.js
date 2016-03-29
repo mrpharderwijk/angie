@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app.home')
+    .module('comp.home')
     .controller('HomeCtrl', HomeCtrl);
 
   function HomeCtrl() {

@@ -2,7 +2,7 @@
   'use strict';
   
   angular
-    .module('app.home')
+    .module('comp.home')
     .config(Config);
 
   function Config($stateProvider) {
@@ -10,7 +10,7 @@
       .state('home', {
         url: '/',
         controller: 'HomeCtrl as home',
-        templateUrl: 'app/home/home.html'
+        templateUrl: 'app/components/home/home.html'
       });
   }
 })();

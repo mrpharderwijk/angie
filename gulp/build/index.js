@@ -6,7 +6,8 @@
 
   gulp.task('build', function(callback) {
     runSequence('clean', [
-      'inject',
+      'test',
+      'inject', // runs sass, libs & scripts
       'images',
       'fonts',
       'copy',

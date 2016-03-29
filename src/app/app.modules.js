@@ -7,6 +7,7 @@
     'ui.router',
 
     // App modules
-    'app.home'
+    'app.components',
+    'app.shared'
   ]);
 })();
