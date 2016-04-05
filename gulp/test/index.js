@@ -6,10 +6,10 @@
 
   gulp.task('test', function(done) {
     karma.start({
-        configFile: process.cwd() + '/karma.conf.js',
-        singleRun: true
+      configFile: process.cwd() + '/karma.conf.js',
+      singleRun: true
     }, function() {
-        done();
+      done();
     });
   });
 })();

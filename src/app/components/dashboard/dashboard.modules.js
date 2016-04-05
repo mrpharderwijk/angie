@@ -2,5 +2,5 @@
   'use strict';
 
   angular
-    .module('comp.home', []);
+    .module('comp.dashboard', []);
 })();

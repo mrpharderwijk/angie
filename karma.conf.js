@@ -17,6 +17,16 @@
 
       // list of files / patterns to load in the browser
       files: [
+        'bower_components/angular/angular.js',
+        'bower_components/angular-mocks/angular-mocks.js',
+        'bower_components/angular-route/angular-route.js',
+        'bower_components/angular-ui-router/release/angular-ui-router.js',
+        'public/app/**/*.modules.js',
+        'public/app/**/*.config.js',
+        'public/app/**/*.controller.js',
+        // 'src/app/**/*.directive.js',
+        // 'src/app/**/*.resource.js',
+        // 'src/app/**/*.service.js',
         'src/app/**/*.spec.js'
       ],
 
@@ -52,7 +62,7 @@
 
 
       // enable / disable watching file and executing tests whenever any file changes
-      autoWatch: true,
+      autoWatch: false,
 
 
       // start these browsers

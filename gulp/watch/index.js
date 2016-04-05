@@ -49,7 +49,7 @@
     watch(config.paths.src.root + '/**', {
         name: 'javascript'
       }, function() {
-        gulp.start('inject');
+        gulp.start('inject', 'test');
       }
     );
 

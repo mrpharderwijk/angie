@@ -18,10 +18,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.2",
-    "angular-route": "^1.5.2",
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
     "angular-ui-router": "ui-router#^0.2.18",
-    "bootstrap-sass": "twbs-bootstrap-sass#^3.3.6"
+    "bootstrap-sass": "twbs-bootstrap-sass#^3.3.6",
+    "angular-mocks": "^1.5.3"
   },
   "overrides": {
     "angular": {

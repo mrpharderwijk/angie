@@ -53,9 +53,17 @@
 
   "browser": true,
   "node": true,
+  "jasmine": true,
+  "mocha": true,
 
   "globals": {
-      "angular": false,
-      "$": false
+    "angular": false,
+    "describe": false,
+    "it": false,
+    "expect": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "module": false,
+    "inject": false
   }
 }
